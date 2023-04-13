@@ -12,3 +12,10 @@ services:
     volumes:
       - ./logs:/app/logs
     command: npm start
+    networks:
+      my-network:
+        ipv4_address: 124.190.20.135
+
+networks:
+  my-network:
+    driver: bridge
